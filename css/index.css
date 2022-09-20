@@ -2,14 +2,14 @@
 /* 全体 */
 /* --------------- */
 body {
-  font-family: Roboto, "Segoe UI", "Helvetica Neue", HelveticaNeue, YuGothic, "Yu Gothic Medium", "Yu Gothic", Verdana, Meiryo, sans-serif;
+  font-family: "Roboto", "Segoe UI", "Helvetica Neue", "Yu Gothic Medium", "Yu Gothic", "Verdana", "Meiryo", "sans-serif";
   font-size: 18px;
   color: #333;
   padding-top: 12vh;
 }
 
 h1 {
-  font-size: 48px;
+  font-size: 40px;
   color: #707070;
   line-height: 1;
   font-weight: bold;

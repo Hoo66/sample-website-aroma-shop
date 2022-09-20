@@ -60,18 +60,16 @@
   #g-nav {
     position: fixed;
     z-index: -1;
-    /* opacity: 0; */
     display: none;
     top: 0;
     width: 100vw;
     height: 100vh;
     background-color: #999;
     transition: all 0.3s;
-    font-size: 32px;
+    font-size: 40px;
   }
 
   #g-nav.panelactive {
-    /* opacity: 1; */
     display: block;
     z-index: 1;
   }
