@@ -3,7 +3,6 @@
   header .container {
     position: relative;
     width: 100%;
-    vertical-align: middle;
   }
 
   .openbtn {
@@ -106,5 +105,11 @@
     text-decoration: none;
     color: #000;
     padding: 10px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #g-nav {
+    font-size: 28px;
   }
 }
