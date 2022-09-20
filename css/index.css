@@ -12,7 +12,7 @@ h1 {
   font-size: 40px;
   color: #707070;
   font-weight: bold;
-  font-family: "Amatic SC", "Work Sans", "Helvetica Neue", "Yu Gothic", Verdana sans-serif;
+  font-family: "Amatic SC", liebeerika, "Arial Narrow", Arial, Verdana, sans-serif;
   text-align: center;
 }
 
@@ -64,7 +64,7 @@ button:hover {
 }
 @media screen and (max-width: 400px) {
   h1 {
-    font-size: 28px;
+    font-size: 32px;
   }
 }
 /* --------------- */
@@ -75,13 +75,21 @@ header {
   width: 100%;
   height: 12vh;
   background-color: #BDD2B6;
-  font-family: "Amatic SC", "Work Sans", "Helvetica Neue", "Yu Gothic", Verdana sans-serif;
-  padding: calc((12vh - 48px) / 2) 0;
+  font-family: "Amatic SC", liebeerika, "Arial Narrow", Arial, Verdana, sans-serif;
+  /* padding: calc((12vh - 48px) / 2) 0; */
   text-align: center;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 500;
+}
+
+header .container {
+  height: 100%;
+}
+
+header h1 {
+  line-height: 12vh;
 }
 
 header h1 a:hover {
