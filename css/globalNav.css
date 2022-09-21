@@ -102,9 +102,12 @@
 
   #g-nav li a {
     display: inline-block;
-    text-decoration: none;
     color: #000;
     padding: 10px;
+  }
+
+  #g-nav li img {
+    height: 24px;
   }
 }
 
