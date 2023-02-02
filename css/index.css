@@ -1,6 +1,7 @@
 /* --------------- */
 /* 全体 */
 /* --------------- */
+
 body {
   font-family: Roboto, "Segoe UI", "Helvetica Neue", "Yu Gothic Medium", "Yu Gothic", Verdana, Meiryo, sans-serif;
   font-size: 18px;
@@ -129,7 +130,7 @@ header ul {
 
   header ul {
     display: flex;
-    font-size: 32px;
+
   }
 
   header li {
@@ -394,44 +395,7 @@ iframe {
   }
 }
 
-/* --------------- */
-/* CONTACT */
-/* --------------- */
-.contact label {
-  display: inline-block;
-  margin-bottom: 15px;
-}
-.contact input, 
-.contact textarea {
-  width: 100%;
-  border: solid 1px rgba(112, 112, 112, .5);
-  margin-bottom: 50px;
-  padding: 5px;
-}
-.contact input {
-  height: 50px;
-}
-.contact textarea {
-  resize: none;
-  height: 240px;
-}
-.contact button {
-  display: block;
-  margin: 0 auto 120px;
-  width: 100px;
-  height: 50px;
-  border-radius: 10px ;
-  background-color: #F8EDE3;
-  line-height: 18px;
-  text-align: center;
-  box-shadow: 0 0 10px #EEE;
-}
 
-@media screen and (min-width: 800px) {
-  .contact .container {
-    max-width: 600px;
-  }
-}
 
 /* --------------- */
 /* Footer */
@@ -480,7 +444,7 @@ footer p {
   margin-top: 100px;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
   footer {
     padding-top: 60px;
   }
@@ -489,9 +453,9 @@ footer p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
-    max-width: 700px;
+    max-width: 900px;
   }
 
   .sns {
