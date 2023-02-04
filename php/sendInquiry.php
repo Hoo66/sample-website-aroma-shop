@@ -42,7 +42,7 @@
   <link rel="stylesheet" href="css/slider.css">
   <link rel="icon" href="/images/favicon/favicon.ico">
   <!-- <script src="https://kit.fontawesome.com/6a7916de5b.js" crossorigin="anonymous"></script> -->
-  <title>Aroma Mirai | Top</title>
+  <title>Aroma Mirai | お問い合わせ送信完了</title>
 </head>
 <body>
   <header>
