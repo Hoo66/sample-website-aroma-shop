@@ -1,12 +1,14 @@
 <?php
+require __DIR__ . '/vendor/autoload.php';
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+$dotenv->load();
+
 // DB名
-define('DB_DATABASE', 'aroma-shop-db');
+define('DB_DATABASE', $_ENV['DB_DATABASE']);
 // MySQLのユーザー名
-define('DB_USERNAME', 'root');
-// MySQLのログインパスワード
-// define('DB_PASSWORD', 'root');
+define('DB_USERNAME', $_ENV['DB_USERNAME']);
 // DSN
-define('PDO_DSN', 'mysql:host=localhost;port=3306;charset=utf8;dbname='.DB_DATABASE);
+define('PDO_DSN', $_ENV['PDO_DSN'].DB_DATABASE);
 
 function db_connect() {
     try {
