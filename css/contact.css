@@ -1,0 +1,38 @@
+/* --------------- */
+/* CONTACT */
+/* --------------- */
+.contact label {
+  display: inline-block;
+  margin-bottom: 15px;
+}
+.contact input, 
+.contact textarea {
+  width: 100%;
+  border: solid 1px #ccc;
+  margin-bottom: 50px;
+  padding: 5px;
+}
+.contact input {
+  height: 50px;
+}
+.contact textarea {
+  resize: none;
+  height: 240px;
+}
+.contact button {
+  display: block;
+  margin: 0 auto 120px;
+  width: 100px;
+  height: 50px;
+  border-radius: 10px ;
+  background-color: #F8EDE3;
+  line-height: 18px;
+  text-align: center;
+  box-shadow: 0 0 10px #EEE;
+}
+
+@media screen and (min-width: 800px) {
+  .contact .container {
+    max-width: 600px;
+  }
+}

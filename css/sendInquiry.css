@@ -1,0 +1,19 @@
+.send-inquiry {
+  height: 600px;
+  text-align: center;
+}
+.send-inquiry p {
+  font-size: 18px;
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+.send-inquiry a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 800px) {
+  .send-inquiry p {
+    font-size: 32px;
+  }
+
+}
