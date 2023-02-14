@@ -44,11 +44,14 @@
       <div class="container">
         <form method="POST" action="sendInquiry.php">
           <label for="name">お名前</label><br>
-          <input type="text" name="name" id="name" required><br>
+          <input type="text" name="name" id="name" required maxlength="50"><br>
           <label for="email">メールアドレス</label><br>
-          <input type="email" name="email" id="email" required><br>
-          <label for="inquiry">お問い合わせ内容</label><br>
-          <textarea name="inquiry" id="inquiry" cols="30" rows="10" required></textarea><br>
+          <input type="email" name="email" id="email" required maxlength="50"><br>
+          <label for="subject">件名</label><br>
+          <input type="text" name="subject" id="subject" required maxlength="50"><br>
+          <label for="detail">お問い合わせ内容（1000字以内）
+          </label><br>
+          <textarea name="detail" id="detail" cols="30" rows="10" required maxlength="1000"></textarea><br>
           <button>送信</button>
         </form>
       </div>
