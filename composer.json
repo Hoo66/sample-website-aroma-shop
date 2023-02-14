@@ -1,5 +1,8 @@
 {
   "require": {
     "vlucas/phpdotenv": "^5.4"
-  }
+  },
+  "compile": [
+    "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+  ]
 }
