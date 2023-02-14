@@ -3,19 +3,17 @@ require __DIR__ . '/vendor/autoload.php';
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
 $dotenv->load();
 
-// DB名
-define('DB_DATABASE', $_ENV['DB_DATABASE']);
-// MySQLのユーザー名
-define('DB_USERNAME', $_ENV['DB_USERNAME']);
-// MySQLのログインパスワード
-define('DB_PASSWORD', $_ENV['DB_PASSWORD']);
-// DSN
-define('PDO_DSN', $_ENV['PDO_DSN'].DB_DATABASE);
+$url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+
+$server = $url["host"];
+$username = $url["user"];
+$password = $url["pass"];
+$db = substr($url["path"], 1);
 
 function db_connect() {
     try {
         // PDOインスタンスの作成
-        $conn = new PDO(PDO_DSN, DB_USERNAME, DB_PASSWORD);
+        $conn = new PDO('mysql:host=' . $server . ';dbname=' . $db . ';charset=utf8mb4', $username, $password);
         // エラー処理方法をexceptionにする
         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         return $conn;
