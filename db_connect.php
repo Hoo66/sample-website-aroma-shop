@@ -7,6 +7,8 @@ $dotenv->load();
 define('DB_DATABASE', $_ENV['DB_DATABASE']);
 // MySQLのユーザー名
 define('DB_USERNAME', $_ENV['DB_USERNAME']);
+// MySQLのログインパスワード
+define('DB_PASSWORD', $_ENV['DB_PASSWORD']);
 // DSN
 define('PDO_DSN', $_ENV['PDO_DSN'].DB_DATABASE);
 

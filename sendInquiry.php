@@ -2,13 +2,12 @@
 
   require_once('db_connect.php');
 
-  // if (isset($_POST['submit'])) {
-    $name = htmlspecialchars($_POST['name']);
-    $email = htmlspecialchars($_POST['email']);
-    $inquiry = htmlspecialchars($_POST['inquiry']);
-  // }
-
-  $sql = "INSERT INTO inquiries (name, email, inquiry) VALUES (:name, :email, :inquiry)";
+  $name = htmlspecialchars($_POST['name']);
+  $email = htmlspecialchars($_POST['email']);
+  $subject = htmlspecialchars($_POST['subject']);
+  $detail = htmlspecialchars($_POST['detail']);
+  
+  $sql = "INSERT INTO inquiries (name, email, subject, detail) VALUES (:name, :email, :subject, :detail)";
 
   $pdo = db_connect();
 
@@ -17,7 +16,8 @@
 
     $stmt->bindParam(':name', $name);
     $stmt->bindParam(':email', $email);
-    $stmt->bindParam(':inquiry', $inquiry);
+    $stmt->bindParam(':subject', $subject);
+    $stmt->bindParam(':detail', $detail);
 
     $stmt->execute();
   } catch (PDOException $e) {
