@@ -15,7 +15,7 @@ define('PDO_DSN', $_ENV['PDO_DSN'].DB_DATABASE);
 function db_connect() {
     try {
         // PDOインスタンスの作成
-        $conn = new PDO(PDO_DSN, DB_USERNAME);
+        $conn = new PDO(PDO_DSN, DB_USERNAME, DB_PASSWORD);
         // エラー処理方法をexceptionにする
         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         return $conn;

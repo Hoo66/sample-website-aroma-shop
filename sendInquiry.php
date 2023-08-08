@@ -2,11 +2,21 @@
 
   require_once('db_connect.php');
 
+<<<<<<< HEAD
   $name = htmlspecialchars($_POST['name']);
   $email = htmlspecialchars($_POST['email']);
   $subject = htmlspecialchars($_POST['subject']);
   $detail = htmlspecialchars($_POST['detail']);
   
+=======
+  // if (isset($_POST['submit'])) {
+    $name = htmlspecialchars($_POST['name']);
+    $email = htmlspecialchars($_POST['email']);
+    $subject = htmlspecialchars($_POST['subject']);
+    $detail = htmlspecialchars($_POST['detail']);
+  // }
+
+>>>>>>> 0b7997e679158d9bc5c573c8ede66f03708d71d2
   $sql = "INSERT INTO inquiries (name, email, subject, detail) VALUES (:name, :email, :subject, :detail)";
 
   $pdo = db_connect();

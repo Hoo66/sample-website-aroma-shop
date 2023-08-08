@@ -1,6 +1,14 @@
 {
   "require": {
+<<<<<<< HEAD
     "vlucas/phpdotenv": "^5.4",
     "php": "^8.1.0"
   }
+=======
+    "vlucas/phpdotenv": "^5.4"
+  },
+  "compile": [
+    "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+  ]
+>>>>>>> 0b7997e679158d9bc5c573c8ede66f03708d71d2
 }
